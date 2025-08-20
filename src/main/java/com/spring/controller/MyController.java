@@ -28,14 +28,14 @@ public class MyController {
         return new ResponseEntity<>(listA, HttpStatus.OK);
     }
 //
-//    //Convert all string names into uppercase
-//    @GetMapping("/nameinUppercase")
-//    public ResponseEntity<List<String>> getList() {
-//        List<String> namelist = Arrays.asList("kajal", "Ajay", "Amar", "om", "shailaja", "Aditya");
-//        List<String> list1 = namelist.stream().map(String::toUpperCase).toList();
-//        return new ResponseEntity<>(list1, HttpStatus.OK);
-//    }
-//
+    //Convert all string names into uppercase
+    @GetMapping("/nameinUppercase")
+    public ResponseEntity<List<String>> getList() {
+        List<String> namelist = Arrays.asList("kajal", "Ajay", "Amar", "om", "shailaja", "Aditya");
+        List<String> list1 = namelist.stream().map(String::toUpperCase).toList();
+        return new ResponseEntity<>(list1, HttpStatus.OK);
+    }
+
 //    //create list of integer and retrive even number from it
 //    @GetMapping("/evenList")
 //    public ResponseEntity<List<Integer>> numList(){
