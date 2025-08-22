@@ -36,14 +36,14 @@ public class MyController {
         return new ResponseEntity<>(list1, HttpStatus.OK);
     }
 
-//    //create list of integer and retrive even number from it
-//    @GetMapping("/evenList")
-//    public ResponseEntity<List<Integer>> numList(){
-//        List<Integer> nums = Arrays.asList(1,23,345,8376,274,98,12,334,45,48);
-//        List<Integer> even = nums.stream().filter(a-> a%2==0).toList();
-//        return new ResponseEntity<>(even , HttpStatus.OK);
-//    }
-//
+    //create list of integer and retrive even number from it
+    @GetMapping("/evenList")
+    public ResponseEntity<List<Integer>> numList(){
+        List<Integer> nums = Arrays.asList(1,23,345,8376,274,98,12,334,45,48);
+        List<Integer> even = nums.stream().filter(a-> a%2==0).toList();
+        return new ResponseEntity<>(even , HttpStatus.OK);
+    }
+
 //    //return square of each number in list
 //    @GetMapping("/squareList")
 //    public ResponseEntity<List<Integer>> squarenum(){
