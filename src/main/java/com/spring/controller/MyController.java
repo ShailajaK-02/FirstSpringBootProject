@@ -44,13 +44,13 @@ public class MyController {
         return new ResponseEntity<>(even , HttpStatus.OK);
     }
 
-//    //return square of each number in list
-//    @GetMapping("/squareList")
-//    public ResponseEntity<List<Integer>> squarenum(){
-//        List<Integer> nums = Arrays.asList(1,23,345,8376,274,98,12,334,45,48);
-//        List<Integer> squareList = nums.stream().map(a-> a*a).toList();
-//        return new ResponseEntity<>(squareList, HttpStatus.OK);
-//    }
+    //return square of each number in list
+    @GetMapping("/squareList")
+    public ResponseEntity<List<Integer>> squarenum(){
+        List<Integer> nums = Arrays.asList(1,23,345,8376,274,98,12,334,45,48);
+        List<Integer> squareList = nums.stream().map(a-> a*a).toList();
+        return new ResponseEntity<>(squareList, HttpStatus.OK);
+    }
 
     //Using employee obj
     @GetMapping("/getEmpName")
