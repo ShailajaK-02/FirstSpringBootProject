@@ -117,7 +117,7 @@ public class MyController {
         }
     }
 
-    //add employee , get data from postman
+    //add employee , get data from postman api
     @PostMapping("/addEmp")
     public ResponseEntity<String> addEmp(@RequestBody Employee e){
         System.err.println("Employee object " + e);
